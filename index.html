@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning on Graphs - Gandhinagar 2026 Meetup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">LOG @ IITGn 2026</div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <!--<li><a href="#location" class="nav-link">Location</a></li> -->
+                <li><a href="#dates" class="nav-link">Dates</a></li>
+                <li><a href="#registration" class="nav-link">Registration</a></li>
+                <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                <li><a href="#speakers" class="nav-link">Speakers</a></li>
+                <li><a href="#organizers" class="nav-link">Organizers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Learning on Graphs 2026</h1>
+            <p class="hero-subtitle">Local Meetup at IIT Gandhinagar</p>
+            <p class="hero-dates">May 9-10, 2026</p>
+            <div class="hero-buttons">
+                <a href="#registration" class="btn btn-primary">Submit Your Work</a>
+                <a href="#schedule" class="btn btn-secondary">View Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section 
+    <section id="location" class="section">
+        <div class="container">
+            <h2 class="section-title">Location</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>IIT Gandhinagar</h3>
+                    <p>Palaj, Gandhinagar, Gujarat 382355, India</p>
+                    <h4>Accommodation</h4>
+                    <p>Accommodation will be provided to all participants. Details will be shared upon registration confirmation.</p>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.849573261446!2d72.18647!3d23.204835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2f8a7a7a7a7d%3A0x7a7a7a7a7a7a7a7a!2sIIT%20Gandhinagar!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Important Dates Section -->
+    <section id="dates" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Important Dates</h2>
+            <div class="dates-grid">
+                <div class="date-card">
+                    <h4>Call for Papers Opens</h4>
+                    <p class="date">January 15, 2026</p>
+                </div>
+                <div class="date-card">
+                    <h4>Submission Deadline</h4>
+                    <p class="date deadline">March 31, 2026</p>
+                </div>
+                <div class="date-card">
+                    <h4>Notifications</h4>
+                    <p class="date">April 15, 2026</p>
+                </div>
+                <div class="date-card">
+                    <h4>Event Dates</h4>
+                    <p class="date">May 9-10, 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="section">
+        <div class="container">
+            <h2 class="section-title">Registration & Submissions</h2>
+            <div class="registration-content">
+                <div class="submission-types">
+                    <div class="submission-card">
+                        <h3>Poster Presentations</h3>
+                        <p>All accepted papers will be presented as posters during dedicated poster sessions.</p>
+                    </div>
+                    <div class="submission-card">
+                        <h3>Spotlight Presentations</h3>
+                        <p>6 selected papers will be featured as spotlight presentations in dedicated sessions.</p>
+                    </div>
+                </div>
+                <div class="registration-info">
+                    <h3>Submission Portal</h3>
+                    <p><strong>Deadline:</strong> March 31, 2026</p>
+                    <p>Submit your work through the OpenReview portal below:</p>
+                    <a href="https://openreview.net/group?id=logconference.org/2026/IIT_Gandhinagar" class="btn btn-primary" target="_blank">Open Submission Portal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Schedule</h2>
+            <div class="schedule-tabs">
+                <button class="tab-button active" data-tab="day1">Day 1: May 9, 2026</button>
+                <button class="tab-button" data-tab="day2">Day 2: May 10, 2026</button>
+            </div>
+
+            <div id="day1" class="tab-content active">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Session</th>
+                            <th>Speaker</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:30 - 9:00 AM</td>
+                            <td>Registration</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>9:00 - 9:30 AM</td>
+                            <td>Starting Session</td>
+                            <td>Anirban Dasgupta</td>
+                        </tr>
+                        <tr class="keynote">
+                            <td>9:30 - 10:20 AM</td>
+                            <td>Keynote 1</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="keynote">
+                            <td>10:10 - 11:00 AM</td>
+                            <td>Keynote 2</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="break">
+                            <td>11:00 - 11:15 AM</td>
+                            <td>Coffee Break</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="spotlight">
+                            <td>11:15 - 11:35 AM</td>
+                            <td>Spotlight 1</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="spotlight">
+                            <td>11:35 - 11:55 AM</td>
+                            <td>Spotlight 2</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="keynote">
+                            <td>11:55 AM - 12:45 PM</td>
+                            <td>Keynote 3</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="break">
+                            <td>12:45 - 2:00 PM</td>
+                            <td>Lunch Break</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="poster">
+                            <td>2:00 - 3:30 PM</td>
+                            <td>Poster Session</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="keynote">
+                            <td>3:30 - 4:20 PM</td>
+                            <td>Keynote 4</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="spotlight">
+                            <td>4:20 - 4:40 PM</td>
+                            <td>Spotlight 3</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="break">
+                            <td>4:40 - 5:00 PM</td>
+                            <td>Coffee Break</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>5:00 - 5:30 PM</td>
+                            <td>Panel Discussion</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="day2" class="tab-content">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Session</th>
+                            <th>Speaker</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="keynote">
+                            <td>9:30 - 10:20 AM</td>
+                            <td>Keynote 5</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="keynote">
+                            <td>10:10 - 11:00 AM</td>
+                            <td>Keynote 6</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="break">
+                            <td>11:00 - 11:15 AM</td>
+                            <td>Coffee Break</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="spotlight">
+                            <td>11:15 - 11:35 AM</td>
+                            <td>Spotlight 4</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="spotlight">
+                            <td>11:35 - 11:55 AM</td>
+                            <td>Spotlight 5</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="keynote">
+                            <td>11:55 AM - 12:45 PM</td>
+                            <td>Keynote 7</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="break">
+                            <td>12:45 - 2:00 PM</td>
+                            <td>Lunch Break</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="poster">
+                            <td>2:00 - 3:30 PM</td>
+                            <td>Poster Session</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="keynote">
+                            <td>3:30 - 4:20 PM</td>
+                            <td>Keynote 8</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="spotlight">
+                            <td>4:20 - 4:40 PM</td>
+                            <td>Spotlight 6</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr class="break">
+                            <td>4:40 - 5:00 PM</td>
+                            <td>Coffee Break</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>5:00 - 5:30 PM</td>
+                            <td>Panel Discussion</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                        <tr>
+                            <td>5:30 - 5:45 PM</td>
+                            <td>Concluding Session</td>
+                            <td><span class="tbd">TBD</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keynote Speakers Section -->
+    <section id="speakers" class="section">
+        <div class="container">
+            <h2 class="section-title">Keynote Speakers</h2>
+            <p class="section-subtitle">Keynote speakers will be announced soon</p>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-placeholder">🎤</div>
+                    <h4>Keynote 1</h4>
+                    <p class="tbd-text">Coming Soon</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-placeholder">🎤</div>
+                    <h4>Keynote 2</h4>
+                    <p class="tbd-text">Coming Soon</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-placeholder">🎤</div>
+                    <h4>Keynote 3</h4>
+                    <p class="tbd-text">Coming Soon</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-placeholder">🎤</div>
+                    <h4>Keynote 4</h4>
+                    <p class="tbd-text">Coming Soon</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-placeholder">🎤</div>
+                    <h4>Keynote 5</h4>
+                    <p class="tbd-text">Coming Soon</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-placeholder">🎤</div>
+                    <h4>Keynote 6</h4>
+                    <p class="tbd-text">Coming Soon</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-placeholder">🎤</div>
+                    <h4>Keynote 7</h4>
+                    <p class="tbd-text">Coming Soon</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-placeholder">🎤</div>
+                    <h4>Keynote 8</h4>
+                    <p class="tbd-text">Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Organizers</h2>
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <h4>Shubhajit Roy</h4>
+                    <p>IIT Gandhinagar</p>
+                </div>
+                <div class="organizer-card">
+                    <h4>Anirban Dasgupta</h4>
+                    <p>IIT Gandhinagar</p>
+                </div>
+            </div>
+            <p class="organizers-note">More organizers to be announced</p>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="section">
+        <div class="container">
+            <h2 class="section-title">Sponsors</h2>
+            <p class="section-subtitle">Sponsors will be announced soon</p>
+            <div class="sponsors-placeholder">
+                <p>Stay tuned for sponsor announcements!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Learning on Graphs Conference - IIT Gandhinagar Local Meetup</p>
+            <p>For inquiries: <a href="mailto:organizers@logconf-iitg.org">organizers@logconf-iitg.org</a></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
